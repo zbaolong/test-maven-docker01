@@ -47,12 +47,12 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.1.0</version>
                 <configuration>
-                    <imageName>175.27.189.153:5000/${docker.image.prefix}/${project.name}::${project.version}</imageName>
+                    <imageName>175.27.189.153:5555/${docker.image.prefix}/${project.name}:${project.version}</imageName>
                     <!--<dockerDirectory>src/main/docker</dockerDirectory>-->
                     <baseImage>java:8</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
                     <pushImage>true</pushImage>
-                    <registryUrl>175.27.189.153:5000</registryUrl>
+                    <registryUrl>175.27.189.153:5555</registryUrl>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>

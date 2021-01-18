@@ -23,7 +23,7 @@ public class HelloController {
     @RequestMapping("/show")
     public String show_data(Map<String,Object> map){
         map.put("hello","<h1>您好</h1>");
-        map.put("users", Arrays.asList("zsan","lisi"));
+        map.put("users", Arrays.asList("zhangsan","lisi"));
 
         return "success";
     }
