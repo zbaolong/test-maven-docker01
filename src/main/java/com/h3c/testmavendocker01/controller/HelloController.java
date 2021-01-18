@@ -11,5 +11,9 @@ public class HelloController {
     public String hello(){
         return "hello h3c CloudOS";
     }
+    @RequestMapping("/success")
+    public String success(){
+        return "success";
+    }
 
 }
