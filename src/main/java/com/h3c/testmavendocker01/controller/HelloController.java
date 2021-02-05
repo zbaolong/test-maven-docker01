@@ -17,7 +17,7 @@ public class HelloController {
     }
     @RequestMapping("/success")
     public String success(){
-        return "success";
+        return "successfully";
     }
     //查询一些数据放到页面
     @RequestMapping("/show")
@@ -25,7 +25,7 @@ public class HelloController {
         map.put("hello","<h1>您好</h1>");
         map.put("users", Arrays.asList("zhangsan","lisi"));
 
-        return "success";
+        return "success!!!!!!1111";
     }
 
 }
